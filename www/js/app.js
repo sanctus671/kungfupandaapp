@@ -41,10 +41,20 @@ angular.module('app', ['ionic', 'app.controllers'])
         url: '/entry',
         templateUrl: "templates/entry.html",
         controller: 'EntryCtrl'
+    }) 
+    .state('terms', {
+        url: '/terms',
+        templateUrl: "templates/terms.html",
+        controller: 'TermsCtrl'
+    })
+    .state('prize', {
+        url: '/prize',
+        templateUrl: "templates/prize.html",
+        controller: 'PrizeCtrl'
     })    
     $urlRouterProvider.otherwise('/home');
     
     
 })
 
-.constant('SITE_URL', 'http://www.luminarygroup.co.nz/westfield/');
+.constant('SITE_URL', 'http://www.foxmoviespromotion.co.nz/kungfupandacomp/assets/php/enter.php');

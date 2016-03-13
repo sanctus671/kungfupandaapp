@@ -1,54 +1,147 @@
-.bookmarks-container{
-    height:100%;
-        background-color: #E3EBF2;
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700,900");
+body{
+  font-family:'Montserrat', Helvetica Neue, Helvetica, Arial, Sans Serif;
+  font-weight:900;
+  color:white;
+  text-align:center;
+  letter-spacing: 1px;
+  
 }
-
-.bookmarks-container .empty-results{
-    text-align:center;
-    font-size:200px;
-}
-
-.bookmarks-container .empty-results h3{
-    font-size:50px;
-    text-transform:uppercase;
-}
-
-.entry-background{
-    background:url(../img/background.jpg) no-repeat center center fixed; 
+ion-view.pane,ion-modal-view{
+        background:url(../img/formbg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;  
 }
 
-.entry-form{
-    background-color: white;
+img{
+    max-width:100%;
 }
 
-.validation-errors{
-        background-color: rgb(255, 255, 255);
+.center-text{
+    text-align:center;
+}
+
+.arrow-button{
+    padding-top:20px;
+    text-align:center;
+}
+
+.arrow-button img{
+    max-width:25%;
+}
+
+.large-text{
+    font-size:24px;
+    line-height:30px;
+}
+
+.popup-container .popup{
+    color: #444;
+    text-align: center;
+}
+
+.popup-buttons .button.button-positive{
+    background-color:#ffc900;
+}
+
+.home-screen .morefm{
+    text-align:center;
+    padding-bottom:10px;
+}
+
+.home-screen .morefm img{
+    max-width:75%;
+}
+
+.home-screen .waw{
+ padding-top:10px;   
+}
+
+.home-screen .prize-link,.home-screen .terms-link{
+    padding:0px 20px;
+
+}
+
+.home-screen .terms-link{
+    text-align:right;
+}
+
+.home-screen .prize-link{
+    text-align:left;
+}
+
+.home-screen .prize-link a,.home-screen .terms-link a{
+        color:white;
+    text-decoration:none;
+}
+
+.entry-screen .entry-text{
+    padding-bottom:20px;
+}
+
+.entry-screen .kfplogo{
+    padding-bottom:10px;
+}
+
+.form-screen .item.item-input{
+        margin-bottom: 15px;
+        border-radius:1px !important;
+       
+}
+
+.form-screen .item.item-input input{
+     font-weight:bold;
+}
+
+.form-screen .item.item-checkbox{
+    border:none;
+    font-size:12px;
+        background-color: transparent;
+    color: white;
+    font-weight: bold;
+    text-align:left;
+}
+
+.form-screen .validation-errors{
+        background-color: transparent;
     color: red;
 
     margin-top: -20px;
 }
 
-.blue-font{
-    color:#387ef5;
+.form-screen .enter{
+    text-align:center;
+    padding-bottom:10px;
 }
 
-ol.tos-list.padding{
-    padding: 30px;
-    list-style:decimal;
+.form-screen .enter img{
+    max-width:75%;
 }
 
-.tos-list li{
-    margin-bottom: 20px;
+.button.modal-button{
+        z-index: 9;
+            position: absolute;
+    right: 0px;
 }
 
-.tos-list strong{
-    margin-top: 20px;
+.form-screen #entry-submit{
+    display:none;
 }
 
-form.padding{
-    padding-bottom:50px;
+.form-screen .sponsers{
+        margin-top: -40px;
 }
+
+
+.prize-screen .prize-text,.terms-screen .terms-text{
+    text-align:left;
+    padding:10px;
+}
+
+.prize-screen .sponsers{
+    margin-bottom:-50px;
+}
+
+

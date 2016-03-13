@@ -1,0 +1,55 @@
+<ion-modal-view>
+    
+	<ion-content class="form-screen">
+            <div class="button button-clear modal-button" ng-click="formModal.hide()"><span class="icon ion-close"></span></div>
+        <div class='row'>
+            <div class='col kfplogo'><img src='img/logo.png'></div>
+        </div>
+
+    <form class="content padding" name="entryForm" novalidate ng-submit="submitEntry(entryForm)">
+       
+        
+        <div class="list entry-form"> 
+            <label class="item item-input">
+              <input type="text" name="fname" required placeholder="FIRST NAME" ng-model="entry.fname">
+            </label>            
+            <label class="item item-input">
+              <input type="text" name="lname" required placeholder="LAST NAME" ng-model="entry.lname">
+            </label>
+            <label class="item item-input">
+              <input type="email" required placeholder="EMAIL" name="email" ng-model="entry.email">
+            </label>
+            <label class="item item-input">
+              <input type="number" name="phone" required placeholder="PHONE NUMBER" ng-model="entry.phone">
+            </label>
+            <ion-checkbox class="checkbox-energized" ng-model="entry.mail_fox" name="mail_fox">HEAR MORE FROM 20TH CENTURY FOX NZ</ion-checkbox>       
+            <ion-checkbox class="checkbox-energized" ng-model="entry.mail_flightcentre" name="mail_flightcentre">HEAR MORE FROM FLIGHT CENTRE</ion-checkbox>   
+            <ion-checkbox class="checkbox-energized" ng-model="entry.mail_dreamworld" name="mail_dreamworld">HEAR MORE FROM DREAMWORLD</ion-checkbox>   
+            <ion-checkbox class="checkbox-energized" ng-model="entry.mail_morefm" name="mail_morefm">HEAR MORE ABOUT THE MORE FM KIDS APP</ion-checkbox>   
+
+        </div>
+        
+       <div class="padding validation-errors" ng-show="entryForm.$submitted">
+            <p ng-show="entryForm.fname.$error.required">* FIRST NAME IS REQUIRED</p>
+            <p ng-show="entryForm.lname.$error.required">* LAST NAME IS REQUIRED</p>
+            <p ng-show="entryForm.email.$error.required">* EMAIL IS REQUIRED</p>
+            <p ng-show="entryForm.email.$invalid">* ENTER A VALID EMAIL ADDRESS</p>
+            <p ng-show="entryForm.phone.$error.required">* PHONE NUMBER IS REQUIRED</p>
+            <p ng-show="entryForm.phone.$invalid">* ENTER A VALID PHONE NUMBER</p>
+        </div>         
+            <button id="entry-submit" type="submit" class="button button-block button-positive ">Submit</button>
+
+    </form>
+
+    <div class='row sponsers'>
+        <div class='col'><img src='img/fcwhite.png'></div>
+        <div class='col'><img src='img/dreamworld.png'></div>
+    </div>
+            
+        <div class='row'>
+            <div class='col enter'><img src='img/enter.png' onclick="document.getElementById('entry-submit').click();"></div>
+        </div>             
+            
+            
+	</ion-content>
+</ion-modal-view>
