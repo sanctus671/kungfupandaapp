@@ -36,19 +36,18 @@
             <p ng-show="entryForm.email.$invalid">* ENTER A VALID EMAIL ADDRESS</p>
             <p ng-show="entryForm.phone.$error.required">* PHONE NUMBER IS REQUIRED</p>
             <p ng-show="entryForm.phone.$invalid">* ENTER A VALID PHONE NUMBER</p>
-        </div>         
-            <button id="entry-submit" type="submit" class="button button-block button-positive ">Submit</button>
-
-    </form>
-
+        </div>    
+        
     <div class='row sponsers'>
         <div class='col'><img src='img/fcwhite.png'></div>
         <div class='col'><img src='img/dreamworld.png'></div>
-    </div>
-            
-        <div class='row'>
-            <div class='col enter'><img src='img/enter.png' onclick="document.getElementById('entry-submit').click();"></div>
-        </div>             
+    </div>        
+            <button id="entry-submit" type="submit" class="button button-block button-positive ">
+            <img src='img/enter.png'>
+            </button>
+
+    </form>
+           
             
             
 	</ion-content>
